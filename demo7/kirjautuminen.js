@@ -6,3 +6,7 @@ function onkoKirjautunut() {
         document.getElementById('tervetulo_teksti').textContent += 'Arttu!';
     }
 }
+
+function kirjaudu() {
+    localStorage.setItem("nimi", "arttu");
+}
