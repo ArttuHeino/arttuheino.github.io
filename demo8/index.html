@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo7</title>
+    <script src="kirjautuminen.js"></script>
+</head>
+<body>
+
+<p id="tervetulo_teksti">Tervetuloa </p>
+<form id="kirjautumis_lomake">
+    <input id="nimi" type="text" placeholder="Syötä Nimesi" value="" />
+    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu Sisään" onClick="kirjaudu()" />
+</form>
+
+<form id="ulosKirjautuminen">
+    <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
+</form>
+    
+</body>
+</html>
