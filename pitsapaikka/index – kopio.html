@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <script src="kirjautuminen.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<img src="kuvat/lataa.png">
+<h1 style="color:green"> Keravan pitseria</h1>
+<br>
+<img src="kuva.pepperoni.jfif" alt="Pepperoni pitsa" width="500" height="500">
+<h3>Pepperoni pitsa</h3>
+<h2>14€</h2>
+<br>
+<img src="kuva.juustopitsa.jpg" alt="Juusto pitsa" width="500" height="500">
+<h3>Juusto pitsa</h3>
+<h2>10€</h2>
+<br>
+<img src="kuva.kebabpitsa.jpg" alt="Juusto pitsa" width="500" height="500">
+<h3>Kebab pitsa</h3>
+<h2>14€</h2>
+<br>
+<form action="/form/submit" method="GET">
+    <input type="text" name="text" class="search" placeholder="Sinun osoite">
+    <input type="submit" name="submit" class="submit" onClick="Lähetä">
+    <p>
+    <input type="text" name="text" class="search" placeholder="Haluamasi pitsa">
+    <input type="submit" name="submit" class="submit" value="Lähetä">
+    <p>
+    <input type="text" name="text" class="search" placeholder="Puhelinnumero">
+    <input type="submit" name="submit" class="submit" value="Lähetä">
+</form>
+
+<br>
+<h3>Tee oman pitsan</h3>
+<form>
+    <input type="button" onclick="window.location.href='t';" value="Tee pitsan" />
+</form>
+    
+</body>
+</html>
