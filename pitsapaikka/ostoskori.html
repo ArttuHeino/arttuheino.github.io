@@ -13,10 +13,14 @@
     <header>
 <!--logo ja kirjautumislomake-->
 <a href="index.html">
-<img src="kuvat/lataa.png">
+    <img src="kuvat/lataa.png">
 </a>
-<h1 class="pitseria">Keravan pitseria</h1>
-<p id="tervetulo_teksti">Tervetuloa </p>
+<h1 class="pitseria">
+    Keravan pitseria
+</h1>
+<p id="tervetulo_teksti">
+    Tervetuloa 
+</p>
 <form id="kirjautumis_lomake">
     <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
     <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
@@ -26,3 +30,18 @@
     <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
 </form>
 </header>
+
+<h1>Ostoskori</h1>
+
+<p id="tuotteet">
+    Valitsemat tuotteesi: 
+    <br>
+</p>
+<p>Osoitteesi</p>
+<form action="/form/submit" method="GET">
+    <input type="text" name="text" class="search" placeholder="Sinun osoite">
+    <br>
+    <input type="text" name="text" class="search" placeholder="Puhelinnumero">
+</form>
+
+</body>
