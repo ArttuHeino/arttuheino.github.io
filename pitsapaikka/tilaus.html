@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
-    <script src="kirjautuminen.js"></script>
+    <script src="js/kirjautuminen.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="js/pizzatilaus.js"></script>
 </head>
 <body>
 
 <img src="kuvat/lataa.png">
-<h1 style="color:green"> Keravan pizzeria</h1>
-<p id="tervetulo_teksti">Tervetuloa </p>
-<form id="kirjautumis_lomake">
-    <input id="nimi" type="text" placeholder="Syötä Nimesi" value="" />
-    <input id="salasana" type="text" placeholder="Syötä Salasana" value="" />
-    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu Sisään" onClick="kirjaudu()" />
+<h1 style="color:green"> Keravan pitseria</h1>
+<br>
+<img src="kuvat/kuva.pepperoni.jfif" alt="Pepperoni pitsa" width="500" height="500">
+<h3>Pepperoni pitsa</h3>
+<h2>14€</h2>
+<input id="lisaa" type="checkbox" value="Normaali">Normaali
+<input id="lisaaiso" type="checkbox" value="Iso">Iso
+<p id="vahvistus1" style="display: none">Lisätty</p>
+<br>
+<img src="kuvat/kuva.juustopitsa.jpg" alt="Juusto pitsa" width="500" height="500">
+<h3>Juusto pitsa</h3>
+<h2>10€</h2>
+<input id="lisaa2" type="checkbox" value="Normaali">Normaali
+<input id="lisaaiso2" type="checkbox" value="Iso">Iso
+<p id="vahvistus2" style="display: none">Lisätty</p>
+<br>
+<img src="kuvat/kuva.kebabpitsa.jpg" alt="Juusto pitsa" width="500" height="500">
+<h3>Kebab pitsa</h3>
+<h2>14€</h2>
+<input id="lisaa3" type="checkbox" value="Normaali">Normaali
+<input id="lisaaiso3" type="checkbox" value="Iso">Iso
+<p id="vahvistus3" style="display: none">Lisätty</p>
+<br>
+<form action="/form/submit" method="GET">
+    <input type="text" name="text" class="search" placeholder="Sinun osoite">
+    <input type="submit" name="submit" class="submit" onClick="Lähetä">
+    <p>
+    <input type="text" name="text" class="search" placeholder="Haluamasi pitsa">
+    <input type="submit" name="submit" class="submit" value="Lähetä">
+    <p>
+    <input type="text" name="text" class="search" placeholder="Puhelinnumero">
+    <input type="submit" name="submit" class="submit" value="Lähetä">
 </form>
 
-<h1>Tilaa</h1>
-<p>Valitse haluamasi pizza</p>
-<img src="kuvat/pizza kuva 1.jpg" width="500px">
-<p class="nimi">Juusto pizza</p>
-<p class="hinta">Hinta: 10€</p>
+<input id="vahvista" type="button" value="Vahvista valinnat" onClick="vahvistus()">
+<a href="juomat.html">
+    <p id="seuraava" style="display: none">Valitse juomat</p>
+</a>
+<br>
+<a href="omapizza.html">
+<h3>Luo unelmapizzasi</h3>
+</a>
 
 </body>
+</html>
