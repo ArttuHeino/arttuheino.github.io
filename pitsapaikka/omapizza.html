@@ -15,44 +15,45 @@
 <a href="index.html">
 <img src="kuvat/lataa.png">
 </a>
-<h1 class="pitseria">Keravan pitseria</h1>
-<p id="tervetulo_teksti">Tervetuloa </p>
+<h1 class="pitseria">Keravan pizzeria</h1>
+<!--<p id="tervetulo_teksti">Tervetuloa </p>
 <form id="kirjautumis_lomake">
     <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
     <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
-    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+    <input id="kirjaudu_nappi" class="button" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
 </form>
 <form id="ulosKirjautuminen">
-    <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
-</form>
+    <input id="ulos_nappi" class="button" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
+</form>-->
 </header>
 
 <!--pizzan luonti-->
 
-<h1>Luo oma pizza</h1>
+<h1>Fantasiapizza</h1>
+<h2>Luo oma herkkupizzasi!</h2>
 
 <form id="taytteet">
     <h3>Juusto</h3>
-    <input id="lisaa" type="button" value="Lisää" onClick="valinta1()">
+    <input id="lisaa" class="button" type="button" value="Lisää" onClick="valinta1()">
     <p id="vahvistus1" style="display: none">Lisätty</p>
     <h3>Pepperoni</h3>
-    <input id="lisaa2" type="button" value="Lisää" onClick="valinta2()">
+    <input id="lisaa2" class="button" type="button" value="Lisää" onClick="valinta2()">
     <p id="vahvistus2" style="display: none">Lisätty</p>
     <h3>Kinkku</h3>
-    <input id="lisaa3" type="button" value="Lisää" onClick="valinta4()">
+    <input id="lisaa3" class="button" type="button" value="Lisää" onClick="valinta4()">
     <p id="vahvistus3" style="display: none">Lisätty</p>
     <h3>Kana</h3>
-    <input id="lisaa4" type="button" value="Lisää" onClick="valinta5()">
+    <input id="lisaa4" class="button" type="button" value="Lisää" onClick="valinta5()">
     <p id="vahvistus4" style="display: none">Lisätty</p>
     <h3>Ananas</h3>
-    <input id="lisaa5" type="button" value="Lisää" onClick="valinta6()">
+    <input id="lisaa5" class="button" type="button" value="Lisää" onClick="valinta6()">
     <p id="vahvistus5" style="display: none">Lisätty</p>
 </form>
 
 <!--vahvistus-->
 <p></p>
-<input id="poistakaikki" type="button" value="Poista valinnat" onClick="poistaKaikki()"><br>
-<input id="vahvista" type="button" value="Vahvista valinnat" onClick="vahvistus()">
+<input id="poistakaikki" class="button" type="button" value="Poista valinnat" onClick="poistaKaikki()"><br>
+<input id="vahvista" class="button" type="button" value="Vahvista valinnat" onClick="vahvistus()">
 <p id="taytelista">Sinun pizzasi: </p>
 
 <a href="juomat.html">

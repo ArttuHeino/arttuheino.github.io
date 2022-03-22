@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <a href="index.html">
-<img src="kuvat/lataa.png">
-</a>
-<h1 style="color:green"> Keravan pitseria</h1>
-<p id="tervetulo_teksti">Tervetuloa </p>
-<form id="kirjautumis_lomake">
-    <input id="nimi" type="text" placeholder="Syötä Nimesi" value="" />
-    <input id="salasana" type="text" placeholder="Syötä Salasana" value="" />
-    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu Sisään" onClick="kirjaudu()" />
-</form>
-
-<form id="ulosKirjautuminen">
-    <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
-</form>
+    <header>
+        <!--logo ja kirjautumislomake-->
+        <a href="index.html">
+        <img src="kuvat/lataa.png">
+        </a>
+        <h1 class="pitseria">Keravan pizzeria</h1>
+        <p id="tervetulo_teksti">Tervetuloa </p>
+        <form id="kirjautumis_lomake">
+            <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
+            <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
+            <input id="kirjaudu_nappi" class="button" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+        </form>
+        <form id="ulosKirjautuminen">
+            <input id="ulos_nappi" class="button" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
+        </form>
+        </header>
 
 <h1>Pizzat </h1>
 <a href="tilaus.html">
 <img src="kuvat/tausta-pizza.png" width="500px" >
-<h1>Tilaa pizza tästä</h1>
+<h1 id="nappi">Tilaa pizza tästä</h1>
 </a>
 <br>
 

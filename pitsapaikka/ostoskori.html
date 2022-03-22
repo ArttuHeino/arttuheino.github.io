@@ -16,7 +16,7 @@
     <img src="kuvat/lataa.png">
 </a>
 <h1 class="pitseria">
-    Keravan pitseria
+    Keravan pizzeria
 </h1>
 <p id="tervetulo_teksti">
     Tervetuloa 
@@ -24,10 +24,10 @@
 <form id="kirjautumis_lomake">
     <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
     <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
-    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+    <input id="kirjaudu_nappi" class="button" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
 </form>
 <form id="ulosKirjautuminen">
-    <input id="ulos_nappi" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
+    <input id="ulos_nappi" class="button" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
 </form>
 </header>
 
@@ -37,6 +37,8 @@
     Valitsemat tuotteesi: 
     <br>
 </p>
+<p>Lisätietoja tilauksesta:</p>
+<input type="text" placeholder="Lisätietoja">
 <p>Osoitteesi</p>
 <form action="/form/submit" method="GET">
     <input type="text" name="text" class="search" placeholder="Sinun osoite">

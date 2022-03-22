@@ -50,7 +50,7 @@ function vahvistus(){
     const check5=document.getElementById('lisaa3')
     const check6=document.getElementById('lisaaiso3')
 
-    //lisää valitut pizzat ostoskoriin (näyttää ihan hirveeltä tiiän)
+    //lisää valitut pizzat ostoskoriin
     if (check1.checked===true){
         lista.push('Pepperoni');
     }
