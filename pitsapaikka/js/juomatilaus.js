@@ -61,6 +61,7 @@ function vahvistus(){
         lista.push('Kivennäisvesi 1.5L');
     }
     console.log(lista);
+    //näyttää valitut juomat ja laittaa ne localstorageen kassaa varten
     document.getElementById("juomalista").textContent += lista.join(', ');
     localStorage.setItem('juomat', lista.join(', '));
     document.getElementById("vahvista").style.display="none";

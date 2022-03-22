@@ -72,5 +72,3 @@ function vahvistus(){
     }
 console.log(lista);
 localStorage.setItem('pizzat', lista.join(', '));
-document.getElementById("vahvista").style.display="none";
-document.getElementById("seuraava").style.display="block";

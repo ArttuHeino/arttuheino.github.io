@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valitse juomat</title>
+    <title>Ostoskori | Keravan Pizzeria</title>
     <script src="js/kirjautuminen.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/ostoskori.js"></script>
@@ -32,11 +32,12 @@
 </p>
 <p>Lisätietoja tilauksesta:</p>
 <input type="text" placeholder="Lisätietoja">
-<p>Osoitteesi</p>
+<p>Kuljetustiedot</p>
 <form action="/form/submit" method="GET">
-    <input type="text" name="text" class="search" placeholder="Sinun osoite">
+    <input type="text" name="text" class="search" placeholder="Kotiosoite">
     <br>
-    <input type="text" name="text" class="search" placeholder="Puhelinnumero">
+    <input type="text" name="text" class="search" placeholder="Puhelinnumero"><br> <br>
+    <input type="button" class="button" value="Lähetä tilaus" onClick="lahetaTilaus()">
 </form>
 
 </body>

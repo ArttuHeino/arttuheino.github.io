@@ -11,3 +11,10 @@ function ostoskori() {
         document.getElementById('tuotteet').textContent += localStorage.getItem('juomat');
     }
 }
+
+function lahetaTilaus() {
+    localStorage.removeItem('pizzat');
+    localStorage.removeItem('omapizza');
+    localStorage.removeItem('juomat');
+    location.href = 'palaute.html';
+}
