@@ -26,7 +26,7 @@ function vahvistus(){
     const check10=document.getElementById('vesipienipullo')
     const check11=document.getElementById('vesiisopullo')
 
-    //lisää valitut juomat ostoskoriin (näyttää ihan hirveeltä tiiän)
+    //lisää valitut juomat ostoskoriin (if if if if if if ei se varmaa ihan näin pidä mennä :D)
     if (check1.checked===true){
         lista.push('Coca-Cola 0.33L');
     }

@@ -1,6 +1,5 @@
-//juomavalinnat tulee tähän
-const lista = []
 
+/*
 //lisää valitut pizzat koriin
 function valinta1() {
     lista.push('Pepperoni');
@@ -38,6 +37,9 @@ function valinta6() {
     document.getElementById("lisaaiso3").style.display="none";
     document.getElementById("vahvistus3").style.display = "block";
 }
+*/
+//juomavalinnat tulee tähän
+const lista = []
 
 //vahvistaa valinnat, lisää localstorageen ja näyttää käyttäjälle mitä on valittu
 function vahvistus(){
@@ -69,6 +71,11 @@ function vahvistus(){
     if (check6.checked===true){
         lista.push('Kebab Iso');
     }
-    }
-console.log(lista);
-localStorage.setItem('pizzat', lista.join(', '));
+	document.getElementById("pizzalista").textContent += lista.join(', ');
+	console.log(lista);
+	localStorage.setItem('pizzat', lista.join(', '));
+}
+
+function main() {
+	location.href = 'index.html';
+}
