@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>Tilaus vahvistettu | Keravan Pizzeria</title>
     <script src="js/kirjautuminen.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/pizzatilaus.js"></script>
@@ -17,15 +17,25 @@
         </a>
         <h1 class="pitseria">Keravan pizzeria</h1>
         <p id="tervetulo_teksti">Tervetuloa </p>
-        <form id="kirjautumis_lomake">
-            <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
-            <input id="salasana" type="password" placeholder="Syötä salasana" value="" />
-            <input id="kirjaudu_nappi" class="button" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
-        </form>
-        <form id="ulosKirjautuminen">
-            <input id="ulos_nappi" class="button" style="display: none;" type="submit" value="Kirjaudu Ulos" onclick="kirjaudu_ulos()" />
-        </form>
     </header>
 
-
+<h1>Kiitos tilauksesta!</h1>
+<p>Tilauksenne on vastaanotettu ja on pian matkalla. Vain pieni hetki ja pääset nauttimaan herkkupizzoista!</p>
+<br>
+<p>Kun odotat pizzaasi, voit antaa meille palautetta tilausprosessista.</p><br>
+<p>Asteikolla 1-5, miten tilaus sujui?</p>
+<input name="valinnat" id="valinnat1" type="radio"> 
+<label for="valinnat1">1</label>
+<input name="valinnat" id="valinnat2" type="radio">
+<label for="valinnat1">2</label>
+<input name="valinnat" id="valinnat3" type="radio">
+<label for="valinnat1">3</label>
+<input name="valinnat" id="valinnat4" type="radio">
+<label for="valinnat1">4</label>
+<input name="valinnat" id="valinnat5" type="radio">
+<label for="valinnat1">5</label>
+<br><br>
+<p>Onko mitään muuta sanottavaa?<p>
+<input id="vapaasana" type="text" placeholder="Vapaa sana"><br>
+<input type="submit"  value="Lähetä">
 </body>
